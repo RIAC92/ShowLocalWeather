@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Geolocation from './components/Geolocation';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Geolocation/>
+
+<footer>
+      <p>Author: Ramon Aquino<br/>
+      <a href="mailto:rivan.ac92@gmail.com">rivan.ac92@gmail.com</a></p>
+      <time dateTime="2021-09-04">Sept 2021 </time>
+    </footer>
     </div>
   );
 }
